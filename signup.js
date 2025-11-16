@@ -20,7 +20,7 @@ window.sendCode = () => {
         email: email
     };
 
-    emailjs.send("service_y439lcp", "template_zksqn5c", params)
+    emailjs.send("service_y439lcp", "template_zksqn5c", templateParams)
     .then(() => alert("인증코드가 전송되었습니다."))
     .catch(err => alert("메일 전송 실패: " + err.text));
 };
